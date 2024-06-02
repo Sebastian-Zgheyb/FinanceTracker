@@ -1,6 +1,6 @@
 package lib.src.finance_tracker.service;
 
-import lib.src.finance_tracker.model.User;
+import lib.src.finance_tracker.model.AppUser;
 import lib.src.finance_tracker.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,15 +14,15 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public List<User> findAll() {
+    public List<AppUser> findAll() {
         return userRepository.findAll();
     }
 
-    public Optional<User> findById(Long id) {
+    public Optional<AppUser> findById(Long id) {
         return userRepository.findById(id);
     }
 
-    public User save(User user) {
+    public AppUser save(AppUser user) {
         return userRepository.save(user);
     }
 
