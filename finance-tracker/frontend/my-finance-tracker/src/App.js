@@ -9,7 +9,7 @@ function App() {
     // Fetch expenses from backend (replace with actual API call)
     const dummyExpenses = [
       { id: 1, description: 'Groceries', amount: 50 },
-      { id: 2, description: 'Utilities', amount: 100 },
+      { id: 2, description: 'Utilities', amount: 110 },
       { id: 3, description: 'Rent', amount: 1200 },
     ];
     setExpenses(dummyExpenses);
